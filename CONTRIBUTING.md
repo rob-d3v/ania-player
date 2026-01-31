@@ -28,7 +28,7 @@ We welcome feature suggestions! Please:
 
 **DO NOT** open public issues for security vulnerabilities.
 
-Email: [security@exemplo.com]
+Email: [support@aniamodels.shop]
 
 See [SECURITY.md](SECURITY.md) for details.
 

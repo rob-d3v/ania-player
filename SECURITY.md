@@ -6,7 +6,7 @@ If you discover a security vulnerability in ANIA Player, please report it respon
 
 **DO NOT** create a public GitHub issue for security vulnerabilities.
 
-Instead, email us at: [security@exemplo.com]
+Instead, email us at: [support@aniamodels.shop]
 
 Include:
 - Description of the vulnerability

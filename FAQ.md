@@ -36,7 +36,7 @@ Yes! The chroma key support makes it perfect for OBS and other streaming softwar
 ## Avatars & .ania Files
 
 ### Where do I get .ania files?
-Download them from the [ANIA Models Market](https://ania.models). Free and premium options available.
+Download them from the [ANIA Models Market](https://aniamodels.shop). Free and premium options available.
 
 ### Can I use any .ania file?
 Only validated .ania files approved by ANIA administrators will work. This ensures quality and copyright compliance.
@@ -113,9 +113,7 @@ Avatar creators retain rights to their creations. All AI-generated avatars compl
 Open an issue on our [GitHub repository](../../issues).
 
 ### How do I contact support?
-For general support: [support@exemplo.com]
-For licensing inquiries: [licensing@exemplo.com]
-For security issues: [security@exemplo.com]
+For general support: [support@aniamodels.shop]
 
 ### Where can I find updates?
-Follow our [GitHub releases](../../releases) and [official website](https://ania.exemplo.com).
+Follow our [GitHub releases](../../releases) and [official website](https://aniamodels.shop).
