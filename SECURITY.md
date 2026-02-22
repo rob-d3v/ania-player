@@ -2,11 +2,11 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in ANIA Player, please report it responsibly:
+If you discover a security vulnerability in ANIA Player, please report it responsibly.
 
-**DO NOT** create a public GitHub issue for security vulnerabilities.
+**Do not** create a public GitHub issue for security vulnerabilities.
 
-Instead, email us at: [support@aniamodels.shop]
+Email: support@aniamodels.shop
 
 Include:
 - Description of the vulnerability
@@ -14,16 +14,21 @@ Include:
 - Potential impact
 - Your contact information
 
-We will respond within 48 hours and work with you to address the issue.
+We will respond within 48 hours and work with you to resolve the issue.
+
+---
 
 ## Supported Versions
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.0.x   | :white_check_mark: |
+| Version | Supported |
+|---------|-----------|
+| 1.0.x   | ✅ |
+
+---
 
 ## Security Features
 
-- Server-side .ania file validation
+- Server-side `.ania` file validation before playback
 - Encrypted communication with ANIA servers
-- No telemetry or data collection beyond license validation
+- No user telemetry beyond license validation
+- Optional password protection for `.ania` files (set during export in Ania Creators)
