@@ -41,18 +41,21 @@ Works with any AI: OpenAI, Anthropic, local LLMs, or any API you route through n
 
 ANIA Player is a frame-based animated avatar player for Windows, Linux, and ARM64 (Raspberry Pi 4 & 5). It displays a configurable animated avatar as a desktop overlay that reacts to audio input in real-time — syncing lip movement to speech and transitioning automatically between idle and talking states.
 
+Avatars can also perform **actions** — custom animations created in Ania Creators and triggered on demand. Actions interrupt the current state instantly and play to completion, giving avatars expressive, reactive behavior beyond idle and talk.
+
 Built for streamers, educators, developers, and anyone who wants a reactive animated avatar without video overhead.
 
 ---
 
 ## How It Works
 
-ANIA Player operates on a two-state audio-driven animation system:
+ANIA Player operates on an audio-driven animation system with three states:
 
 - **Idle** — While no audio is detected, a randomized idle frame sequence plays.
-- **Talk** — When the configured audio input detects speech, a random talk frame triggers and a talk sequence begins. When speech stops, the avatar transitions back to an idle sequence.
+- **Talk** — When the configured audio input detects speech, a random talk frame triggers and a talk sequence begins. When speech stops, the avatar transitions back to idle.
+- **Action** — A custom animation created by the avatar's author. Actions interrupt idle or talk instantly and play to completion. Triggered via hotkey, TTS, n8n workflow, or any configured input.
 
-This gives avatars natural, reactive behavior driven purely by audio — no video recording, no complex rendering pipeline, minimal resource usage.
+This gives avatars natural, reactive behavior driven purely by audio and events — no video recording, no complex rendering pipeline, minimal resource usage.
 
 ---
 
@@ -72,16 +75,24 @@ This gives avatars natural, reactive behavior driven purely by audio — no vide
 - **STT (Speech-to-Text)** — Voice transcription that feeds into chatbot or automation pipelines
 - **Wake Word** — Configure a custom trigger phrase to activate STT on demand
 
+### Actions
+- **Custom Animations** — Avatars can perform any action defined by their creator: dances, jumps, greetings, reactions, and more
+- **Interrupt-based** — Actions immediately interrupt idle or talk and play to completion
+- **Unlimited** — The number of actions an avatar can have is defined entirely by its creator in Ania Creators
+- **Multi-trigger** — Actions can be triggered via hotkey, TTS, n8n workflow, or any configured input
+
 ### Hotkeys
 - **Hide Avatar** — Instantly removes the avatar from screen, freeing CPU/RAM
 - **Show Avatar** — Brings it back with a single keypress
 - **Toggle Mute** — Pause audio detection without closing the app
 - **Relocate** — Move the avatar overlay to any position on screen
 - **Switch Avatar** — Cycle to the next loaded avatar
+- **Trigger Action** — Fire any configured avatar action instantly
 
 ### Chatbots & Automation
 - **n8n Integration** — Connect to n8n workflows for full chatbot and AI automation
 - **AI Pipeline Support** — Feed STT output into any AI model and return responses via TTS
+- **Action Triggers via n8n** — Trigger avatar actions directly from workflow events
 - **Alexa-style Assistant** — Combine wake word + STT + AI + TTS for a fully autonomous avatar assistant
 
 ### General
@@ -130,6 +141,7 @@ All hotkeys are fully configurable in **Settings → Hotkeys**.
 | Toggle mute | Pauses audio detection without closing the app |
 | Relocate | Drag or position the avatar anywhere on screen |
 | Switch avatar | Cycle to the next loaded `.ania` avatar |
+| Trigger action | Fire any configured avatar action instantly |
 
 > Hiding the avatar completely removes it from rendering. This is the most effective way to save resources during scenes or moments where the avatar isn't needed.
 
@@ -145,13 +157,15 @@ ANIA Player can be the visible face of a fully automated AI assistant:
 4. **AI response** is returned to ANIA Player via TTS
 5. **Avatar** speaks the response in real-time
 
+Actions can also be triggered from n8n workflows — for example, having the avatar wave when a user connects, or dance when a goal is reached.
+
 No coding required — configure everything through the app and n8n's visual workflow editor.
 
 ---
 
 ## ANIA Format
 
-`.ania` files contain all frame-based animation data for an avatar. They are:
+`.ania` files contain all frame-based animation data for an avatar, including idle sequences, talk sequences, and any actions defined by the creator. They are:
 
 - Created using **Ania Creators** (desktop application)
 - Validated and approved by ANIA administrators
@@ -162,7 +176,7 @@ No coding required — configure everything through the app and n8n's visual wor
 
 **Download from the marketplace** — [aniamodels.shop](https://aniamodels.shop) already has a growing library of avatars available, including free options.
 
-**Create your own** — Use Ania Creators to build a completely original avatar from your own images.
+**Create your own** — Use Ania Creators to build a completely original avatar from your own images, with your own custom actions.
 
 **Commission a creator** — Browse creator profiles on the marketplace and contact any creator directly to request a custom avatar. This works for individuals and companies alike. If you want a branded avatar for your business, your stream, or your product — find a creator whose style fits, and negotiate directly.
 
