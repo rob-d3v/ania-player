@@ -25,13 +25,17 @@ Any AI model can have a visible, animated presence using ANIA Player.
 
 Connect an avatar to your AI pipeline and it will speak every response, react to every input, and give your assistant a personality you can see.
 
-**The full pipeline — no coding required:**
+**The full pipeline — no coding required, and since v1.1.0 no external tooling either:**
 
 ```
-User speaks → Wake word → STT → AI model (via n8n) → TTS → Avatar speaks in real-time
+User speaks → Wake word → STT → LLM → TTS → Avatar speaks in real-time
 ```
 
-Works with any AI: OpenAI, Anthropic, local LLMs, or any API you route through n8n. Runs on Windows, Linux, and Raspberry Pi. Avatars available free at [aniamodels.shop](https://aniamodels.shop).
+All four stages now run **inside the player**, with twelve swappable engines. Out of the box it points at **local Ollama** — fully offline, no API key, no cloud. n8n is still supported; it is no longer required.
+
+Works with any AI: OpenAI, Anthropic, local LLMs, or anything you route yourself. Runs on Windows, Linux, and Raspberry Pi. Avatars available free at [aniamodels.shop](https://aniamodels.shop).
+
+> **v1.1.0 is a large release.** The avatar can now act as a **system webcam** in OBS, Zoom, Meet and Discord; lip-sync to ChatGPT's voice with **no audio configuration at all**; and be driven from a 34-verb CLI, `ania://` links, or opt-in remote control. Full details — and the limitations, stated up front — in **[RELEASE-v1.1.0.md](RELEASE-v1.1.0.md)**.
 
 > Need a custom avatar for your AI product or brand? Browse creator profiles on the marketplace and commission one directly.
 
@@ -68,12 +72,32 @@ This gives avatars natural, reactive behavior driven purely by audio and events 
 - **Frame Speed Control** — Fine-tune animation speed independently of audio detection
 - **Switch Avatar** — Hotkey to cycle between loaded avatars instantly
 
-### Audio & Speech
-- **Real-time Audio Detection** — Detects speech from any configured system audio source
-- **Configurable Audio Input** — Select microphone or any audio interface available on your system
-- **TTS (Text-to-Speech)** — Configure automated avatar speech for chatbot or scripted responses
-- **STT (Speech-to-Text)** — Voice transcription that feeds into chatbot or automation pipelines
-- **Wake Word** — Configure a custom trigger phrase to activate STT on demand
+### Virtual Camera *(new in 1.1.0)*
+- **Your avatar as a webcam** — "Ania Virtual Camera" appears in OBS, Zoom, Meet, Discord and anything that accepts a camera
+- **Scene compositor** — Layer screen capture, images and the avatar, with a drag-and-scale editor and a region picker
+- One click on Windows (drivers bundled, MIT). Linux needs `v4l2loopback`. **No macOS support**
+
+### Companion Mode *(new in 1.1.0)*
+- **Lip-syncs to ChatGPT's voice with zero audio setup** — no Stereo Mix, no VB-Cable, no device list, no dialog
+- **Automatic loopback resolution** — finds the device that captures what your speakers play, verifies it for 2 seconds, and says so honestly if it had to fall back to your microphone
+- Corner-anchored, transparent, click-through, always on top. `Ctrl+Shift+A` always gives the window back
+
+### Voice & AI *(rebuilt in 1.1.0)*
+- **12 swappable engines** — 5 TTS (Piper local, Edge, ElevenLabs, Google Cloud, OpenAI), 5 STT (faster-whisper local, Google, Windows offline, ElevenLabs, Whisper), 2 wake word
+- **Sentinela** — Ania's own wake-word engine: pt-BR tuned, single ONNX, 100% offline, self-calibrating, models verified by sha256
+- **Floating chat window** with live partial transcription
+- **Local by default** — Ollama, faster-whisper and Piper all run offline. Cloud engines are marked ☁ in the UI *before* you install them
+- **Real-time audio detection** from any system audio source
+
+### Marketplace & Library *(new in 1.1.0)*
+- **Storefront inside the player** — search, category chips, animated previews, install with progress. No login, no account
+- **Crash-safe local library** — atomic writes, SHA-256 verification, and a killed download never leaves a broken entry
+
+### Automation & Control *(new in 1.1.0)*
+- **34-verb CLI** — `aniaplayer tts "hello"`, `action`, `status --json`
+- **`ania://` links** — a web page can open the player in companion mode, install an avatar, or start a pairing
+- **Ania Link** — opt-in remote control by 6-character code, behind a 16-verb allowlist. **Off by default; with it off nothing connects out**
+- **MQTT and MySQL** integrations, the latter read-only by default
 
 ### Actions
 - **Custom Animations** — Avatars can perform any action defined by their creator: dances, jumps, greetings, reactions, and more
@@ -90,13 +114,14 @@ This gives avatars natural, reactive behavior driven purely by audio and events 
 - **Trigger Action** — Fire any configured avatar action instantly
 
 ### Chatbots & Automation
-- **n8n Integration** — Connect to n8n workflows for full chatbot and AI automation
+- **Built-in assistant** — wake word + STT + LLM + TTS, all in-app, pointed at local Ollama by default. *This is the "Alexa-style assistant" v1.0.0 described; it now ships rather than being assembled*
+- **n8n Integration** — still supported for anyone who prefers to route through workflows
 - **AI Pipeline Support** — Feed STT output into any AI model and return responses via TTS
 - **Action Triggers via n8n** — Trigger avatar actions directly from workflow events
-- **Alexa-style Assistant** — Combine wake word + STT + AI + TTS for a fully autonomous avatar assistant
+- **Plugin manager** — install engines from a UI that shows size, repository, licence and a ☁ Cloud / 🏠 Local badge before you commit
 
 ### General
-- **194 Languages** — Full interface localization
+- **192 Languages** — Full interface localization. *The Ania Link screens and companion mode are English-only for now; everything else falls back to English in those two areas*
 - **Cross-Platform** — Windows 10/11, Linux x86_64, Linux ARM64
 - **Raspberry Pi 4 & 5** — ARM64 build tested and supported
 - **Minimal Resource Usage** — Optimized for low CPU/RAM; smart frame caching
