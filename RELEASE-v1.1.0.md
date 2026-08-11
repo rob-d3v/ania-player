@@ -223,6 +223,15 @@ para instalá-la.
 
 **Linux x86_64:** `AniaPlayerSetup.deb` · **Linux ARM64:** `aniaplayer_1.1_arm64.deb`
 
+> **Nota para quem publica a release:** o nome do arquivo importa. A página de launch do
+> plugin escolhe o instalador **pelo nome**, e um nome fora do padrão faz o visitante Linux
+> não receber download nenhum — sem erro visível em lugar nenhum.
+>
+> Testado contra o matcher real: `AniaPlayerSetup.deb` e `aniaplayer_1.1_amd64.deb` são
+> reconhecidos como x86_64; `aniaplayer_1.1_arm64.deb` e `aniaplayer-arm64.deb` como ARM64.
+> A regra é simples — **token `arm64` ou `aarch64` no nome significa ARM; a ausência dele
+> significa x86_64.** Então nunca publique o ARM64 sem esse token no nome.
+
 ```bash
 sudo dpkg -i AniaPlayerSetup.deb || sudo apt -f install
 ```
