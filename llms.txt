@@ -4,8 +4,8 @@
 
 Ania is built for streamers, content creators, developers, educators, companies, and anyone who wants to give a face to an AI assistant or a digital persona.
 
-Support: support@aniamodels.shop
-Marketplace: https://aniamodels.shop
+Support: support@diatech.solutions
+Marketplace: https://avatar.diatech.solutions
 Creator: robd3v — https://www.linkedin.com/in/robseng/
 
 ---
@@ -47,7 +47,7 @@ Platform: Google Chrome
 What it does: Browser-native avatar player. Supports TTS, STT, wake word, n8n integration. Audio captured by the browser.
 
 ### 5. Ania Models Marketplace
-URL: https://aniamodels.shop
+URL: https://avatar.diatech.solutions
 What it does: Download free avatars, purchase premium avatars, sell your own creations, manage a public creator profile, commission custom avatars from any creator. Guides and access to all applications.
 Languages: 194
 Note: Already has a growing library of avatars available, including characters free from copyright restrictions.
@@ -77,10 +77,10 @@ Used by: Ania Player, Ania WebPlayer, Ania Browser Extension, n8n Ania integrati
 → Download Ania Player. Open a `.ania` file. Enable chroma key. Add to OBS as a source.
 
 **"I want to create and sell my own avatar"**
-→ Download Ania Creators. Import frames. Test. Export `.ania`. Publish to aniamodels.shop.
+→ Download Ania Creators. Import frames. Test. Export `.ania`. Publish to avatar.diatech.solutions.
 
 **"I want an avatar for my company / brand"**
-→ Go to aniamodels.shop. Browse creator profiles. Contact a creator directly to commission a custom avatar. Companies can negotiate pricing and ownership directly with creators.
+→ Go to avatar.diatech.solutions. Browse creator profiles. Contact a creator directly to commission a custom avatar. Companies can negotiate pricing and ownership directly with creators.
 
 **"I want to embed an avatar on my website"**
 → Use Ania WebPlayer (React library).
@@ -92,7 +92,7 @@ Used by: Ania Player, Ania WebPlayer, Ania Browser Extension, n8n Ania integrati
 → Ania Player + wake word + STT + AI model (via n8n) + TTS. Works on desktop (Windows, Linux) and Raspberry Pi.
 
 **"I want a free avatar to get started"**
-→ Go to aniamodels.shop. Several avatars are available for free download.
+→ Go to avatar.diatech.solutions. Several avatars are available for free download.
 
 ---
 
@@ -114,6 +114,6 @@ Used by: Ania Player, Ania WebPlayer, Ania Browser Extension, n8n Ania integrati
 
 ## Contact
 
-General support: support@aniamodels.shop
-Marketplace: https://aniamodels.shop
+General support: support@diatech.solutions
+Marketplace: https://avatar.diatech.solutions
 Creator / Developer: robd3v — https://www.linkedin.com/in/robseng/

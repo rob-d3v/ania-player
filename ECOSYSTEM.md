@@ -81,7 +81,7 @@ Adds an Ania avatar directly in the browser. Supports TTS, STT, wake word, and n
 ---
 
 ### 5. Ania Models Marketplace
-**URL:** https://aniamodels.shop
+**URL:** https://avatar.diatech.solutions
 **What it does:**
 The central hub of the Ania ecosystem:
 - Browse and download free avatars (characters free from copyright restrictions)
@@ -151,7 +151,7 @@ Download Ania Player. Load a `.ania` file. Enable chroma key in settings. Add th
 Download Ania Creators. Import your idle and talk images. Configure sequences and timing. Test with your microphone and TTS. Export as `.ania` or publish to the marketplace.
 
 **"How do I get an avatar for my company?"**
-Go to aniamodels.shop. Browse creator profiles. Contact any creator to commission a custom avatar. Negotiate ownership, style, and pricing directly.
+Go to avatar.diatech.solutions. Browse creator profiles. Contact any creator to commission a custom avatar. Negotiate ownership, style, and pricing directly.
 
 **"Can I embed an avatar on my website?"**
 Yes. Use Ania WebPlayer (React library). Supports TTS, STT, wake word, and n8n.
@@ -169,6 +169,6 @@ Yes. Ania Player has an ARM64 build tested on Raspberry Pi 4 and Raspberry Pi 5.
 
 ## Contact & Support
 
-- **Support:** support@aniamodels.shop
-- **Marketplace:** https://aniamodels.shop
+- **Support:** support@diatech.solutions
+- **Marketplace:** https://avatar.diatech.solutions
 - **Creator / Developer:** robd3v — https://www.linkedin.com/in/robseng/

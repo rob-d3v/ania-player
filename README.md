@@ -33,7 +33,7 @@ User speaks → Wake word → STT → LLM → TTS → Avatar speaks in real-time
 
 All four stages now run **inside the player**, with twelve swappable engines. Out of the box it points at **local Ollama** — fully offline, no API key, no cloud. n8n is still supported; it is no longer required.
 
-Works with any AI: OpenAI, Anthropic, local LLMs, or anything you route yourself. Runs on Windows, Linux, and Raspberry Pi. Avatars available free at [aniamodels.shop](https://aniamodels.shop).
+Works with any AI: OpenAI, Anthropic, local LLMs, or anything you route yourself. Runs on Windows, Linux, and Raspberry Pi. Avatars available free at [avatar.diatech.solutions](https://avatar.diatech.solutions).
 
 > **v1.1.0 is a large release.** The avatar can now act as a **system webcam** in OBS, Zoom, Meet and Discord; lip-sync to ChatGPT's voice with **no audio configuration at all**; and be driven from a 34-verb CLI, `ania://` links, or opt-in remote control. Full details — and the limitations, stated up front — in **[RELEASE-v1.1.0.md](RELEASE-v1.1.0.md)**.
 
@@ -194,12 +194,12 @@ No coding required — configure everything through the app and n8n's visual wor
 
 - Created using **Ania Creators** (desktop application)
 - Validated and approved by ANIA administrators
-- Available at [aniamodels.shop](https://aniamodels.shop) — free and premium options, including characters free from copyright restrictions
+- Available at [avatar.diatech.solutions](https://avatar.diatech.solutions) — free and premium options, including characters free from copyright restrictions
 - Portable, encrypted, and optionally password-protected
 
 ### Getting an Avatar
 
-**Download from the marketplace** — [aniamodels.shop](https://aniamodels.shop) already has a growing library of avatars available, including free options.
+**Download from the marketplace** — [avatar.diatech.solutions](https://avatar.diatech.solutions) already has a growing library of avatars available, including free options.
 
 **Create your own** — Use Ania Creators to build a completely original avatar from your own images, with your own custom actions.
 
@@ -233,7 +233,7 @@ No coding required — configure everything through the app and n8n's visual wor
 | **Ania Creators** | Windows, Linux | Avatar creation studio |
 | **Ania WebPlayer** | React / Any browser | Web integration library for developers |
 | **Ania Browser Extension** | Chrome | Browser-native avatar player |
-| **Ania Models** | Web | Marketplace at [aniamodels.shop](https://aniamodels.shop) |
+| **Ania Models** | Web | Marketplace at [avatar.diatech.solutions](https://avatar.diatech.solutions) |
 
 ---
 
@@ -251,8 +251,8 @@ This software is distributed under a proprietary license. See [LICENSE](LICENSE)
 ## Support
 
 - **Bug Reports & Feature Requests** — [GitHub Issues](../../issues)
-- **General Support** — support@aniamodels.shop
-- **Marketplace** — [aniamodels.shop](https://aniamodels.shop)
+- **General Support** — support@diatech.solutions
+- **Marketplace** — [avatar.diatech.solutions](https://avatar.diatech.solutions)
 
 ---
 

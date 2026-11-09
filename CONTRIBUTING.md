@@ -39,13 +39,13 @@ Thank you for your interest in ANIA Player!
 
 **Do not** open public issues for security vulnerabilities.
 
-Email: support@aniamodels.shop — See [SECURITY.md](SECURITY.md) for details.
+Email: support@diatech.solutions — See [SECURITY.md](SECURITY.md) for details.
 
 ---
 
 ## Other Ways to Contribute
 
-- **Create avatars** using Ania Creators and publish them on [aniamodels.shop](https://aniamodels.shop) — growing the library benefits everyone
+- **Create avatars** using Ania Creators and publish them on [avatar.diatech.solutions](https://avatar.diatech.solutions) — growing the library benefits everyone
 - **Accept commissions** — if you're a skilled creator, other users and companies may contact you to build custom avatars
 - **Leave feedback** on the marketplace — reviews help creators improve their work
 - **Share the project** with streamers, developers, and content creators who could benefit from it

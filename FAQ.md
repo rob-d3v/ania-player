@@ -9,7 +9,7 @@ ANIA Player is a desktop animated avatar player for Windows, Linux, and ARM64. I
 Yes. Completely free for personal and commercial use.
 
 ### Do I need to pay for avatars?
-ANIA Player itself is free. Individual avatars (`.ania` files) can be free or premium, available at [aniamodels.shop](https://aniamodels.shop). There are already many avatars available — including characters free from copyright restrictions.
+ANIA Player itself is free. Individual avatars (`.ania` files) can be free or premium, available at [avatar.diatech.solutions](https://avatar.diatech.solutions). There are already many avatars available — including characters free from copyright restrictions.
 
 ### Can I create my own avatars?
 Yes. Use Ania Creators (separate application, also free) to build and export your own `.ania` avatars.
@@ -106,7 +106,7 @@ Yes. All hotkeys are configurable in **Settings → Hotkeys**.
 ## Avatars & .ania Files
 
 ### Where do I get `.ania` files?
-From the [ANIA Models marketplace](https://aniamodels.shop). There are already many free and premium avatars available, including characters free from copyright restrictions.
+From the [ANIA Models marketplace](https://avatar.diatech.solutions). There are already many free and premium avatars available, including characters free from copyright restrictions.
 
 ### Can I request a custom avatar from a creator?
 Yes. Browse creator profiles on the marketplace and contact creators directly to commission work. This is open to individuals and companies alike — if you need a branded avatar for your business, you can reach out to any creator whose style fits what you're looking for.
@@ -166,7 +166,7 @@ No. ANIA Player is proprietary software.
 Open an issue on [GitHub](../../issues).
 
 ### How do I contact support?
-Email: support@aniamodels.shop
+Email: support@diatech.solutions
 
 ### Where can I find updates?
-Follow [GitHub releases](../../releases) and [aniamodels.shop](https://aniamodels.shop).
+Follow [GitHub releases](../../releases) and [avatar.diatech.solutions](https://avatar.diatech.solutions).

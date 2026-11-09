@@ -6,7 +6,7 @@ If you discover a security vulnerability in ANIA Player, please report it respon
 
 **Do not** create a public GitHub issue for security vulnerabilities.
 
-Email: support@aniamodels.shop
+Email: support@diatech.solutions
 
 Include:
 - Description of the vulnerability
